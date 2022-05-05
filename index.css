@@ -1,0 +1,232 @@
+#after_navbar{
+    display: none;
+    position: fixed;
+    background-image: url('https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png');
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+}
+#second_main{
+    margin-top: 70px;
+}
+.tag_sec{
+    width: 90%;
+    margin: auto;
+}
+.tag_head{
+    text-align: center;
+    color: #AED8EA;
+    font-size: 24px;
+}
+
+#tagsDiv{
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    column-gap: 10px;
+    padding: 5px;
+}
+#tagsDiv::-webkit-scrollbar{
+    display: none;
+}
+#tagsDiv>div{
+    border: 1px solid gray;
+    width: 110px;
+    height: 130px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+#tagsDiv>div:hover{
+    margin-top: -2px;
+    cursor: pointer;
+}
+#tagsDiv>div>div{
+    width: 110px;
+    border-radius: 0px 0px 5px 5px;
+}
+#tagsDiv>div>div>div:nth-child(1){
+    font-size: 14px;
+    color: white;
+    line-height: 16.1px;
+    font-weight: 600;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+#tagsDiv>div>div>div:nth-child(2){
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16.6px;
+    color: rgba(255, 255, 255, 0.686);
+    padding-bottom: 12px;
+}
+.body_{
+  width: 85%;
+  margin: auto;
+}
+.filter{
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+}
+#most_viral{
+    display: flex;
+    align-items: center;
+}
+#most_viral>div,
+#popular>div{
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+}
+#most_viral span,
+#popular span{
+    font-size: 40px;
+    color:white;
+}
+#filters_all span{
+     font-size: 30px;
+     color: gray;
+}
+#filters{
+    display: flex;
+    gap: 20px;
+}
+#popular{
+    display: flex;
+    align-items: center;
+}
+#filters_all{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#image_card{
+    line-height: 20px;
+   -webkit-column-count: 5;
+   -webkit-column-gap:   20px;
+   -webkit-row-gap:20px;
+   -moz-column-count:    5;
+   -moz-column-gap:      20px;
+   -moz-row-gap:20px;
+   column-count:         5;
+   column-gap:           20px;
+   row-gap: 40px;
+   margin-top: 40px;
+}
+#image_card img,
+#image_card video{
+    width: 100% !important;
+  height: auto !important;
+  border-radius:5px 5px 0 0;
+}
+.child{
+    background-color:#474a51;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.name_d{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+.counts{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+.counts>div{
+    display: flex;
+    align-items: center;
+}
+.counts svg{
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.title{
+    overflow: hidden;
+  max-width: 75ch;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+  font-weight: 500;
+  background-color: #474a51;
+  font-size: 14px;
+}
+@media only screen and (max-width:1250px){
+    #image_card{
+       -webkit-column-count: 4;
+       -moz-column-count:    4;
+       column-count:         4;
+    }
+}
+@media only screen and (max-width:1100px){
+    #image_card{
+       -webkit-column-count: 3;
+       -moz-column-count:    3;
+       column-count:         3;
+    }
+}
+@media only screen and (max-width:930px){
+    #image_card{
+       -webkit-column-count: 2;
+       -moz-column-count:    2;
+       column-count:         2;
+    }
+}
+@media only screen and (max-width:760px){
+    .body_{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:580px){
+    .body_{
+         width: 70%;
+    }
+    #most_viral>div,
+    #popular>div{
+        font-size: 14px;
+    }
+    #filters_all span{
+        font-size: 20px;
+   }
+   #most_viral span,
+#popular span{
+    font-size: 20px;
+}
+}
+@media only screen and (max-width:500px){
+    #image_card{
+       -webkit-column-count: 1;
+       -moz-column-count:    1;
+       column-count:         1;
+    }
+    .GoUp{
+     width: 20px;
+    }
+    #after_navbar{
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width:340px){
+    .body_{
+         width: 70%;
+    }
+    #most_viral>div,
+    #popular>div{
+        font-size: 10px;
+    }
+    #filters_all span{
+        font-size: 15px;
+   }
+   #most_viral span,
+#popular span{
+    font-size: 15px;
+}
+}
